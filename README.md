@@ -12,3 +12,6 @@ HTML, CSS, FontAwesome, JavaScript, JQUERY, ESRI JavaScript API
 - Possibilità di filtrare i siti archeologici per nome 
 
 ## Previews:
+
+![jakala](https://user-images.githubusercontent.com/46935430/62734012-2e508d80-ba28-11e9-9e34-26a8d2ee5e4a.gif)
+
