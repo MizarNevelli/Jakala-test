@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.map-wrapper{
+  width: 100vw;
+  height: 75vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+#viewDiv {
+  height: 70%;
+  width: 70%;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+
+}
+
+.logo{
+  width: 200px;
+}
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+}
+
+.links-wrap span{
+  margin: 15px;
+  cursor: pointer;
+}
+
+.links-wrap span:hover{
+  color: brown;
+  transform: scale(1.5);
+  transition: .5s;
+}
+
+.slider{
+  background-image: url("https://images.unsplash.com/photo-1532969476555-7a4eb819a357?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  opacity: 0.6;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+  transition: background 1s ease-in-out;
+
+}
+
+.slider-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.menu-icon{
+  width: 30px;
+  cursor: pointer;
+  display: inline;
+}
+
+.menu{
+  position: relative;
+  display: none;
+}
+
+.dropdown{
+  display: inline;
+  position: absolute;
+  top: 50px;;
+  right: 0;
+  z-index: 99999;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown p {
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.dropdown p:hover{
+  background: lightgrey;
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .links-wrap span{
+    display: none;
+  }
+  .menu{
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.careers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image : url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.try{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.try h1{
+  margin: 30px;
+  text-align: center;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image : url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper h1, .wrapper p{
+  color: white;
+  margin: 30px 0;
+  text-align: center;
+  width: 60vw;
+  line-height: 2;
+}
+
+.about h1, .about p{
+  margin: 30px 0;
+  text-align: center;
+  width: 60vw;
+  line-height: 2;
+}
+
+.btn{
+  padding: 10px 30px;
+  background: saddlebrown;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: white;
+  color: saddlebrown;
+  transition: 1s;
+  border-color: saddlebrown
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer-wrap{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.footer-logo{
+  position: relative;
+}
+.footer-logo p{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.social{
+  margin: 20px;
+  font-size: 200%;
+}
+
+.social:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  cursor: pointer;
+}
+.fa-facebook-f:hover{
+  color: #3C5A99;
+}
+.fa-linkedin-in:hover{
+  color: #4875B4;
+}
+.fa-instagram:hover{
+  color: #fb3958;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .social{
+    margin: 5px;
+    font-size: 120%;
+  }
+
+}
